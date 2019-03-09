@@ -67,7 +67,7 @@ def save_data(df, database_filename):
         df: cleaned Pandas DataFrame
         database_filename: DataBase name to save
     """
-    engine = create_engine('sqlite:///InsertDatabaseName.db')
+    engine = create_engine('sqlite:///DisasterResponse.db')
     df.to_sql(database_filename, engine, index=False)
 
 
