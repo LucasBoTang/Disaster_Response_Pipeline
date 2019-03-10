@@ -1,4 +1,22 @@
-# Disaster Response Pipeline Project
+# Data Scientist Nanodegree
+# Data Engineering
+## Project 5: Disaster Response Pipeline
+
+### Installation:
+
+This project requires **Python 3.x** and the following Python libraries installed:
+
+- [Pandas](http://pandas.pydata.org)
+- [scikit-learn](http://scikit-learn.org/stable/)
+- [NLTK](https://www.nltk.org/)
+- [SQLAlchemy](https://www.sqlalchemy.org/)
+- [Plotly](https://plot.ly/)
+- [Flask](http://flask.pocoo.org/)
+
+### Data:
+
+* disaster_messages.csv: Messages data.
+* disaster_categories.csv: Disaster categories of messages.
 
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
