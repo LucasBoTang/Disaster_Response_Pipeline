@@ -63,7 +63,7 @@ def build_model():
     - build model
 
     Return:
-        pipeline: machine learning pipeline
+        cv: grid search of machine learning pipeline
     """
     # set pipeline
     pipeline = Pipeline([
@@ -71,7 +71,14 @@ def build_model():
         ('tfidf', TfidfTransformer()),
         ('multioutput', MultiOutputClassifier(AdaBoostClassifier()))
     ])
-    return pipeline
+
+    # grid search
+    parameters = {
+        'multioutput__estimator__learning_rate': [0.1, 0.3, 1],
+        'multioutput__estimator__n_estimators': [10, 50, 100]
+    }
+    cv = GridSearchCV(pipeline, param_grid=parameters, n_jobs=-1)
+    return cv
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
