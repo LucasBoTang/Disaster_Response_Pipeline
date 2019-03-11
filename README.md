@@ -2,7 +2,6 @@
 # Data Engineering
 ## Project 5: Disaster Response Pipeline
 
-![Web Screenshot 1](https://github.com/LucasBoTang/Project_Disater_Response_Pipeline/blob/master/screenshot/web_screenshot1.png)
 ![Web Screenshot 2](https://github.com/LucasBoTang/Project_Disater_Response_Pipeline/blob/master/screenshot/web_screenshot2.png)
 
 ### Installation:
